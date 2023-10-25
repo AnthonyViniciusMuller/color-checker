@@ -17,7 +17,7 @@ export const playText = (text) => {
 
 export const startWebCam = () => {
     navigator.mediaDevices.getUserMedia({
-        video: {width: 300, height: 300, facingMode: { exact: "environment" }},
+        video: {width: 300, height: 300, facingMode: { ideal: "environment" }},
         audio: false
     }).then(stream => {
         video.srcObject = stream;
